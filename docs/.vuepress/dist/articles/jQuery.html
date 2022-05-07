@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>【jQuery】API总结 | Kinsey&#39;s Blog</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="你我山巅自相逢，人去归来烟雨中。">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    
+    <link rel="preload" href="/wasd/assets/css/0.styles.a73ea467.css" as="style"><link rel="preload" href="/wasd/assets/js/app.a113cfd1.js" as="script"><link rel="preload" href="/wasd/assets/js/3.62b295ba.js" as="script"><link rel="preload" href="/wasd/assets/js/1.f4584c3d.js" as="script"><link rel="preload" href="/wasd/assets/js/14.8572bb46.js" as="script"><link rel="prefetch" href="/wasd/assets/js/10.b264cbd6.js"><link rel="prefetch" href="/wasd/assets/js/11.8e893e47.js"><link rel="prefetch" href="/wasd/assets/js/12.bd84dc5e.js"><link rel="prefetch" href="/wasd/assets/js/13.217aa097.js"><link rel="prefetch" href="/wasd/assets/js/4.625d3df6.js"><link rel="prefetch" href="/wasd/assets/js/5.47c49e8a.js"><link rel="prefetch" href="/wasd/assets/js/6.4c4a24c7.js"><link rel="prefetch" href="/wasd/assets/js/7.1e659d90.js"><link rel="prefetch" href="/wasd/assets/js/8.f9fbc994.js"><link rel="prefetch" href="/wasd/assets/js/9.d1f53e93.js">
+    <link rel="stylesheet" href="/wasd/assets/css/0.styles.a73ea467.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar" data-v-130b300a><div data-v-130b300a><div class="password-shadow password-wrapper-out" style="display:none;" data-v-25ba6db2 data-v-130b300a data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>Kinsey's Blog</h3> <p class="description" data-v-25ba6db2 data-v-25ba6db2>你我山巅自相逢，人去归来烟雨中。</p> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>谦逊</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div class="hide" data-v-130b300a><header class="navbar" data-v-130b300a><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/wasd/" class="home-link router-link-active"><img src="/wasd/logo.png" alt="Kinsey's Blog" class="logo"> <span class="site-name">Kinsey's Blog</span></a> <div class="links"><div class="color-picker"><a class="color-button"><i class="iconfont reco-color"></i></a> <div class="color-picker-menu" style="display:none;"><div class="mode-options"><h4 class="title">Choose mode</h4> <ul class="color-mode-options"><li class="dark">dark</li><li class="auto active">auto</li><li class="light">light</li></ul></div></div></div> <div class="search-box"><i class="iconfont reco-search"></i> <input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/wasd/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wasd/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/wasd/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/wasd/categories/jQuery/" class="nav-link"><i class="undefined"></i>
+  jQuery
+</a></li></ul></div></div><div class="nav-item"><a href="/wasd/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav></div></header> <div class="sidebar-mask" data-v-130b300a></div> <aside class="sidebar" data-v-130b300a><div class="personal-info-wrapper" data-v-39576ba9 data-v-130b300a><img src="/wasd/person.jpg" alt="author-avatar" class="personal-img" data-v-39576ba9> <h3 class="name" data-v-39576ba9>
+    谦逊
+  </h3> <div class="num" data-v-39576ba9><div data-v-39576ba9><h3 data-v-39576ba9>4</h3> <h6 data-v-39576ba9>Articles</h6></div> <div data-v-39576ba9><h3 data-v-39576ba9>2</h3> <h6 data-v-39576ba9>Tags</h6></div></div> <ul class="social-links" data-v-39576ba9></ul> <hr data-v-39576ba9></div> <nav class="nav-links"><div class="nav-item"><a href="/wasd/timeline/" class="nav-link"><i class="iconfont reco-date"></i>
+  时间轴
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><a class="dropdown-title"><span class="title"><i class="iconfont reco-category"></i>
+      前端基础
+    </span> <span class="arrow right"></span></a> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/wasd/categories/CSS/" class="nav-link"><i class="undefined"></i>
+  CSS
+</a></li><li class="dropdown-item"><!----> <a href="/wasd/categories/HTML/" class="nav-link"><i class="undefined"></i>
+  HTML
+</a></li><li class="dropdown-item"><!----> <a href="/wasd/categories/jQuery/" class="nav-link"><i class="undefined"></i>
+  jQuery
+</a></li></ul></div></div><div class="nav-item"><a href="/wasd/tag/" class="nav-link"><i class="iconfont reco-tag"></i>
+  Tag
+</a></div> <!----></nav> <!----> </aside> <div class="password-shadow password-wrapper-in" style="display:none;" data-v-25ba6db2 data-v-130b300a><h3 class="title" data-v-25ba6db2 data-v-25ba6db2>【jQuery】API总结</h3> <!----> <label id="box" class="inputBox" data-v-25ba6db2 data-v-25ba6db2><input type="password" value="" data-v-25ba6db2> <span data-v-25ba6db2>Konck! Knock!</span> <button data-v-25ba6db2>OK</button></label> <div class="footer" data-v-25ba6db2 data-v-25ba6db2><span data-v-25ba6db2><i class="iconfont reco-theme" data-v-25ba6db2></i> <a target="blank" href="https://vuepress-theme-reco.recoluan.com" data-v-25ba6db2>vuePress-theme-reco</a></span> <span data-v-25ba6db2><i class="iconfont reco-copyright" data-v-25ba6db2></i> <a data-v-25ba6db2><span data-v-25ba6db2>谦逊</span>
+            
+          <!---->
+          2022
+        </a></span></div></div> <div data-v-130b300a><main class="page"><section><div class="page-title"><h1 class="title">【jQuery】API总结</h1> <div data-v-f875f3fc><i class="iconfont reco-account" data-v-f875f3fc><span data-v-f875f3fc>谦逊</span></i> <i class="iconfont reco-date" data-v-f875f3fc><span data-v-f875f3fc>3/28/2022</span></i> <i class="iconfont reco-eye" data-v-f875f3fc><span id="/wasd/articles/jQuery.html" data-flag-title="Your Article Title" class="leancloud-visitors" data-v-f875f3fc><a class="leancloud-visitors-count" style="font-size:.9rem;font-weight:normal;color:#999;"></a></span></i> <i class="tags iconfont reco-tag" data-v-f875f3fc><span class="tag-item" data-v-f875f3fc>JS框架</span></i></div></div> <div class="theme-reco-content content__default"><h1 id="jquery总结"><a href="#jquery总结" class="header-anchor">#</a> jQuery总结:</h1> <h3 id="_1-转换"><a href="#_1-转换" class="header-anchor">#</a> 1.转换</h3> <div class="language- extra-class"><pre class="language-text"><code>           - jQuery是基于原生js进行封装的
+             一些常见的属性和方法
+           - jQuery和js对象可以相互转换 
+             =&gt; $('div')[index]  | $('div').get(index)
+           - jQuery在某些场景下需要转换为
+             DOM对象
+</code></pre></div><h3 id="_2-常用api"><a href="#_2-常用api" class="header-anchor">#</a> 2.常用API</h3> <div class="language- extra-class"><pre class="language-text"><code>            - 选择器
+                -- $('#id')  id
+                -- $('*')  全选
+                -- $('.id')  class
+                -- $('div')   标签
+                -- $('div,p,li')   多选
+                -- $('div.current')   交集选择
+                -- $('ul li')  孩子选择
+
+            - 隐式迭代
+                -- 遍历内部DOM元素(伪数组形式存储)的过程
+                -- 给所有元素进行循环遍历,执行相应方法,简化操作
+                -- $('div').css('属性','值')
+                -- 
+
+            - 筛选选择器
+                -- $('li:first')  第一个li元素
+                -- $('li:last')   最后一个li元素
+                -- $('li:eq(1)')  第二个li元素
+                -- $('li:odd')    奇数个元素
+                -- $('li:even')   偶数个元素
+
+            - 筛选方法(重点)
+                -- $('li').parent();            查找li的父级元素
+                -- $('ul').children('li');      查找ul的最近一级(亲儿子)
+                -- $('ul').find('li');          查找ul的后代所有li元素
+                -- $('.first').siblings('li');  查找兄弟节点,不包括自己本身
+                -- $('.first').nextAll();       查找当前元素之后所有的同辈元素
+                -- $('.last').preAll();         查找当前元素之前所有的同辈元素
+                -- $('div').hasClass('protected') 检查该元素是否有该类名
+                -- $('li').eq(2)                查找li里面的第三个元素
+                -- $('div').parents('选择器')    查找div的祖先级元素
+            - 排他思想
+                -- $(function(){
+                    $('button').click(function(){
+                        当前元素修改样式
+                        $(this).css('background','pink')
+                        当前元素的兄弟节点修改样式
+                        $(this).siblings('button').css('background','')
+                    })
+                })
+            
+            - 链式编程
+                -- $(function(){
+                    $('button').click(function(){
+                        $(this).css('background','pink').siblings().css('background','')
+                    })
+                })
+
+            - 操作CSS方法
+                -- 参数只写属性名 =&gt; 返回属性值
+                -- 当属性值为数字时可以不用加单元和引号
+                -- 当参数为多个属性时,用冒号隔开,并用{} 包裹 =&gt;对象的写法
+                    -- $(this).css({
+                        'font-size':'16px',
+                        'color':'red'
+                    })
+                
+            - 设置类样式方法 =&gt; 等同于 classList
+                -- $('div').addClass('current');   添加类
+                -- $('div').removeClass('current') 删除类
+                -- $('div').toggleClass('current') 切换类 =&gt; 常用于多次点击
+</code></pre></div><h3 id="_3-jquery的常见效果"><a href="#_3-jquery的常见效果" class="header-anchor">#</a> 3.jQuery的常见效果</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 显示隐藏
+                -- show()
+                    以下效果均为该参数
+                    -- show(speed,easing,fn)
+                        -- speed =&gt; 速度 
+                            -- slow
+                            -- normal
+                            -- fast
+                        -- easing =&gt; 切换效果
+                            -- swing (默认)
+                            -- linear
+                        -- fn =&gt; 回调函数
+                    -- hide()
+                    -- toggle()
+        
+            -- 滑动
+                -- slideDown()
+                -- slideUp()
+                -- slideToggle()
+
+            -- 淡入淡出
+                -- fadeln()
+                -- fadeOut()
+                -- fadeToggle()
+                -- fadeTo()
+                    -- fadeTo(speed,opacity(透明度),easing,fn)
+                        -- opacity 取值0-1
+
+            -- 自定义动画
+                -- animate()
+                    -- animate({params},speed,easing,fn)
+                        -- params 是更改的样式属性,以对象形式书写
+                        -- {
+                            width:500px,
+                            top:300px
+                            }
+
+            -- 事件切换
+                -- hover
+                    -- hover(over,out);
+                        -- over =&gt; 相当于mouseenter(鼠标经过)
+                        -- out  =&gt; 相当于mouseleave(鼠标移出)
+                    -- 注意:
+                        -- 如果只在hover里面写一个函数,鼠标经过和移出都会触发
+                        -- $('ul').hover(function(){
+                            $(this).children('li').slideToggle();
+                        })
+                    -- 解决动画排队问题
+                        -- stop() 写在动画函数前 =&gt; 表示停止上一次的动画只执行当前的动画
+</code></pre></div><h3 id="_4-jquery属性操作"><a href="#_4-jquery属性操作" class="header-anchor">#</a> 4.jQuery属性操作</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 获取/修改原有属性值
+                -- element.prop('属性名')
+                    -- $('a').prop.('href')  
+            -- 获取/修改自定义属性值
+                -- element.attr('属性名')
+                    -- $('div').attr('index')      =&gt; getAttribute()
+                -- element.attr('属性名','值')
+                    -- $('div').attr('index','2')  =&gt; setAttribute()
+
+            -- 数据缓存 data() =&gt; 在指定的元素上存取数据,不会修改DOM元素结构,页面刷新后消失
+                -- $('span').data('uname','andy')  =&gt; sessionStorage(会话存储)
+</code></pre></div><h3 id="_5-jquery内容文本值"><a href="#_5-jquery内容文本值" class="header-anchor">#</a> 5.jQuery内容文本值</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 获取设置元素内容 html()     =&gt; innerHTML
+                -- $('div').html()        =&gt; 拿到div里面的值
+                -- $('div').html('123')   =&gt; 修改div里面的值
+            -- 获取设置元素文本内容 text()  =&gt; innerText()
+                -- $('div').text()        =&gt; 拿到div里面的文本值
+                -- $('div').text('123')   =&gt; 修改div里面的文本值
+            -- 获取设置表单的值
+                -- $('input').val()       =&gt; 获取input的value值
+                -- $('input').val('123')  =&gt; 修改input的value值
+</code></pre></div><h3 id="_6-jquery元素操作"><a href="#_6-jquery元素操作" class="header-anchor">#</a> 6.jQuery元素操作</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 遍历
+                -- each() =&gt; 针对DOM元素的遍历
+                    -- 一般each()方法和数组连用 =&gt; 通过数组索引来获取改变的样式
+                    -- $('div').each(function(index,domel) 
+                    })
+            -- $.each() =&gt; 针对数组、对象
+                -- 可以用来遍历任何对象 =&gt; 主要用于数据处理,数组、对象
+                -- $.each(object,function(index,element) 
+                })
+            -- 创建
+                -- 创建元素
+                    -- $('&amp;lt;li&gt;123456&amp;lt;/li&gt;')
+            -- 添加
+                -- 在内部添加 =&gt; 父子关系
+                    -- $('ul').append(li)  =&gt; 添加到ul内部的最后    =&gt; appendchild
+                    -- $('ul').prepend(li) =&gt; 添加到ul内部的最前面  =&gt; insertbefore
+                -- 在外部添加 =&gt; 兄弟关系
+                    -- $('ul').after('内容')  =&gt; 添加到ul的后面
+                    -- $('ul').before('内容') =&gt; 添加到ul的前面
+            -- 删除
+                -- $('ul').remove() =&gt; 删除ul元素
+                -- $('ul').empty()  =&gt; 删除ul元素内部的子元素
+                -- $('ul').html('') =&gt; 删除ul元素内部的子元素
+</code></pre></div><h3 id="_7-jquery尺寸、位置操作"><a href="#_7-jquery尺寸、位置操作" class="header-anchor">#</a> 7.jQuery尺寸、位置操作</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 尺寸
+                -- width()/height()             =&gt; 取得匹配元素宽度和高度值
+                -- innerWidth() / innerHeight() =&gt; 取得匹配元素宽度和高度值包含													   padding
+                -- outerWidth() / outerHeight() =&gt; 取得匹配元素宽度和高度值包含													   padding、border
+                -- outerWidth(true) / outerHeight(true) =&gt; 取得匹配元素宽度和高度值包														含padding、border、margin
+            -- 位置
+                -- offset()                     =&gt; 相对于文档的位置
+                -- position()                   =&gt; 相对于带有定位父元素的位置
+                -- scrollTop()/scrollLeft()     =&gt; 相对于整个文档被卷去的位置
+</code></pre></div><h3 id="_8-jquery事件"><a href="#_8-jquery事件" class="header-anchor">#</a> 8.jQuery事件</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- 事件注册
+                -- $(function(){
+                    $('div').click(function(){
+                        $(this).css('background','purple');
+                    })
+                })
+            -- 事件处理
+                -- 写法
+                    $('div').on({
+                        mouseenter:function(){
+                            $(this).css('background','purple');
+                        },
+                        click:function(){
+                            $(this).css('background','pink');
+                        },
+                        ...
+                    })
+                -- (1).如果事件处理程序函数相同
+                    $('div').on('click blur focus',function(){
+                        $(this).css('background','purple');
+                    })
+                -- (2).实现事件委派
+                    $('ul').on('click','li',function(){
+                        $(this).css('background','purple')
+                    })
+                -- (3).动态绑定事件
+                    $('ul').on('click','li',function(){
+                        alert('11');
+                    })
+                -- off()解绑事件
+                    $('div').off();
+                    $('div').off('click');
+                    $('div').off('click','li');
+                -- one()绑定触发一次事件
+                    $('div').one('click',function(){
+                        ...
+                    })
+                -- 自动触发事件
+                    $('div').click()
+                -- 事件对象
+                    -- 阻止默认冒泡行为
+                        -- stopPropagation()
+
+</code></pre></div><h3 id="_9-其他方法"><a href="#_9-其他方法" class="header-anchor">#</a> 9.其他方法</h3> <div class="language- extra-class"><pre class="language-text"><code>            -- jQuery拷贝对象
+                -- $.extend(浅拷贝还是深拷贝,拷贝给谁,拷贝谁)
+            -- 多库共存
+                -- 解决方法
+                    $ =&gt; jQuery
+                    let 变量名 = $.noConflict()
+            -- jQuery插件
+                -- 瀑布流
+                -- 图片懒加载
+                    -- 页面滑到可视区域,再显示图片
+                -- 全屏滚动插件fullpages.js
+</code></pre></div></div></section> <footer class="page-edit"><!----> <!----></footer> <!----> <div class="comments-wrapper"><!----></div> <ul class="side-bar sub-sidebar-wrapper" style="width:12rem;" data-v-cb1513f6><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_1-转换" class="sidebar-link reco-side-_1-转换" data-v-cb1513f6>1.转换</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_2-常用api" class="sidebar-link reco-side-_2-常用api" data-v-cb1513f6>2.常用API</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_3-jquery的常见效果" class="sidebar-link reco-side-_3-jquery的常见效果" data-v-cb1513f6>3.jQuery的常见效果</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_4-jquery属性操作" class="sidebar-link reco-side-_4-jquery属性操作" data-v-cb1513f6>4.jQuery属性操作</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_5-jquery内容文本值" class="sidebar-link reco-side-_5-jquery内容文本值" data-v-cb1513f6>5.jQuery内容文本值</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_6-jquery元素操作" class="sidebar-link reco-side-_6-jquery元素操作" data-v-cb1513f6>6.jQuery元素操作</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_7-jquery尺寸、位置操作" class="sidebar-link reco-side-_7-jquery尺寸、位置操作" data-v-cb1513f6>7.jQuery尺寸、位置操作</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_8-jquery事件" class="sidebar-link reco-side-_8-jquery事件" data-v-cb1513f6>8.jQuery事件</a></li><li class="level-3" data-v-cb1513f6><a href="/wasd/articles/jQuery.html#_9-其他方法" class="sidebar-link reco-side-_9-其他方法" data-v-cb1513f6>9.其他方法</a></li></ul></main> <!----></div></div></div></div><div class="global-ui"><div class="back-to-ceiling" style="right:1rem;bottom:6rem;width:2.5rem;height:2.5rem;border-radius:.25rem;line-height:2.5rem;display:none;" data-v-c6073ba8 data-v-c6073ba8><svg t="1574745035067" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="5404" class="icon" data-v-c6073ba8><path d="M526.60727968 10.90185116a27.675 27.675 0 0 0-29.21455937 0c-131.36607665 82.28402758-218.69155461 228.01873535-218.69155402 394.07834331a462.20625001 462.20625001 0 0 0 5.36959153 69.94390903c1.00431239 6.55289093-0.34802892 13.13561351-3.76865779 18.80351572-32.63518765 54.11355614-51.75690182 118.55860487-51.7569018 187.94566865a371.06718723 371.06718723 0 0 0 11.50484808 91.98906777c6.53300375 25.50556257 41.68394495 28.14064038 52.69160883 4.22606766 17.37162448-37.73630017 42.14135425-72.50938081 72.80769204-103.21549295 2.18761121 3.04276886 4.15646224 6.24463696 6.40373557 9.22774369a1871.4375 1871.4375 0 0 0 140.04691725 5.34970492 1866.36093723 1866.36093723 0 0 0 140.04691723-5.34970492c2.24727335-2.98310674 4.21612437-6.18497483 6.3937923-9.2178004 30.66633723 30.70611158 55.4360664 65.4791928 72.80769147 103.21549355 11.00766384 23.91457269 46.15860503 21.27949489 52.69160879-4.22606768a371.15156223 371.15156223 0 0 0 11.514792-91.99901164c0-69.36717486-19.13165746-133.82216804-51.75690182-187.92578088-3.42062944-5.66790279-4.76302748-12.26056868-3.76865837-18.80351632a462.20625001 462.20625001 0 0 0 5.36959269-69.943909c-0.00994388-166.08943902-87.32547796-311.81420293-218.6915546-394.09823051zM605.93803103 357.87693858a93.93749974 93.93749974 0 1 1-187.89594924 6.1e-7 93.93749974 93.93749974 0 0 1 187.89594924-6.1e-7z" p-id="5405" data-v-c6073ba8></path><path d="M429.50777625 765.63860547C429.50777625 803.39355007 466.44236686 1000.39046097 512.00932183 1000.39046097c45.56695499 0 82.4922232-197.00623328 82.5015456-234.7518555 0-37.75494459-36.9345906-68.35043303-82.4922232-68.34111062-45.57627738-0.00932239-82.52019037 30.59548842-82.51086798 68.34111062z" p-id="5406" data-v-c6073ba8></path></svg></div><div class="kanbanniang" data-v-5775ee02><div class="banniang-container" style="display:;" data-v-5775ee02><div class="messageBox" style="right:68px;bottom:190px;display:none;" data-v-5775ee02>
+      我是lookroot欢迎你的关注 
+    </div> <div class="operation" style="right:90px;bottom:40px;display:;" data-v-5775ee02><i class="kbnfont kbn-ban-home ban-home" data-v-5775ee02></i> <i class="kbnfont kbn-ban-message message" data-v-5775ee02></i> <i class="kbnfont kbn-ban-close close" data-v-5775ee02></i> <a target="_blank" href="https://vuepress-theme-reco.recoluan.com/views/plugins/kanbanniang.html" data-v-5775ee02><i class="kbnfont kbn-ban-info info" data-v-5775ee02></i></a> <i class="kbnfont kbn-ban-theme skin" style="display:;" data-v-5775ee02></i></div> <canvas id="banniang" width="240" height="352" class="live2d" style="right:90px;bottom:-20px;opacity:0.9;" data-v-5775ee02></canvas></div> <div class="showBanNiang" style="display:none;" data-v-5775ee02>
+    看板娘
+  </div></div></div></div>
+    <script src="/wasd/assets/js/app.a113cfd1.js" defer></script><script src="/wasd/assets/js/3.62b295ba.js" defer></script><script src="/wasd/assets/js/1.f4584c3d.js" defer></script><script src="/wasd/assets/js/14.8572bb46.js" defer></script>
+  </body>
+</html>
